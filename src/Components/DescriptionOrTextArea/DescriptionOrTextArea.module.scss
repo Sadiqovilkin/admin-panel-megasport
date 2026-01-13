@@ -1,0 +1,35 @@
+.descriptionOrTextAreaWrapper {
+  .textAreaName {
+    display: block;
+    color: rgba(1, 1, 1, 1);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0 7px;
+  }
+  .langArea {
+    width: fit-content;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(245, 245, 245, 1);
+    .lang {
+      padding: 5px 7px;
+    }
+    .activeLang {
+      border-radius: 5px;
+      color: white;
+      background-color: rgba(52, 199, 89, 1);
+    }
+  }
+  .description {
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 15px 5px 15px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(198, 198, 200, 1);
+  }
+}

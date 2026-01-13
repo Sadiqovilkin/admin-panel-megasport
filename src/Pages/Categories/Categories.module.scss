@@ -1,0 +1,184 @@
+.categoriesPageWrapper {
+  .addModalWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modalArea {
+      position: relative;
+      width: 700px;
+      height: 90vh;
+      overflow-y: scroll;
+      background-color: white;
+      z-index: 99999999;
+      border-radius: 12px;
+      padding: 20px;
+      .closeIcon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px 0;
+      }
+      .categoryInput {
+        padding: 15px 5px 15px 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border: 1px solid rgba(198, 198, 200, 1);
+        border-radius: 12px;
+        color: rgba(68, 68, 68, 1);
+      }
+      .textarea {
+        width: 100%;
+        resize: none;
+        outline: none;
+        padding: 15px 5px 15px 10px;
+        border-radius: 12px;
+        border: 1px solid rgba(198, 198, 200, 1);
+      }
+      form {
+        .nameSlugWrapper {
+          display: flex;
+          align-items: end;
+          gap: 10px;
+          .nameInputWrapper,
+          .slug {
+            width: 100%;
+          }
+        }
+        .parentCategoryAndSortOrderInpWraper {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .parentCategoryInp,
+          .sortOrderInp {
+            width: 100%;
+          }
+          .parentCategoryInp {
+            position: relative;
+          }
+        }
+        .imgAddAreaWrapper {
+          .categoryImageWrapper{
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            width: 130px;
+            height: 80px;
+            border: 1px solid rgb(97, 95, 95);
+            border-radius: 12px;
+            background-color: rgba(66, 180, 47, 0.1);
+            img{
+              width: 80px;
+              height: 80px;
+            }
+            .deleteIcon{
+             position: absolute;
+             top: 4px;
+             right: 4px;
+             cursor: pointer;
+             z-index: 9999;
+            }
+          }
+          .imgAddWrapper {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 2px dashed transparent;
+            border-radius: 8px;
+            background: repeating-linear-gradient(
+                  to right,
+                  rgba(198, 198, 200, 1) 0 5px,
+                  transparent 5px 10px
+                )
+                0 0 / 100% 2px no-repeat,
+              repeating-linear-gradient(
+                  to right,
+                  rgba(198, 198, 200, 1) 0 5px,
+                  transparent 5px 10px
+                )
+                0 100% / 100% 2px no-repeat,
+              repeating-linear-gradient(
+                  to bottom,
+                  rgba(198, 198, 200, 1) 0 5px,
+                  transparent 5px 10px
+                )
+                0 0 / 2px 100% no-repeat,
+              repeating-linear-gradient(
+                  to bottom,
+                  rgba(198, 198, 200, 1) 0 5px,
+                  transparent 5px 10px
+                )
+                100% 0 / 2px 100% no-repeat;
+            .imgInput {
+              opacity: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              cursor: pointer;
+            }
+          }
+        }
+        .searchResultArea {
+          position: absolute;
+          top: 90px;
+          height: 100px;
+          width: 100%;
+          padding-top: 5px;
+          background-color: rgba(198, 198, 200, 1);
+          z-index: 9;
+          border-radius: 5px;
+          overflow-y: auto;
+          &::-webkit-scrollbar {
+			  	width: 4px;
+			}
+			&::-webkit-scrollbar-track {
+				background: rgba(66, 180, 47, 1);
+        	background: rgba(50, 50, 50, 0.8);
+				border-radius: 1rem;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background: rgba(50, 50, 50, 0.8);
+        		background: rgba(66, 180, 47, 1);
+				border-radius: 1rem;
+			}
+  
+          .parentCategoryName {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            cursor: pointer;
+            &:hover {
+              background-color:rgba(66, 180, 47, 1);
+            }
+          }
+        }
+      .resetInput{
+        position: absolute;
+        top: 50px;
+        right:10px;
+        cursor: pointer;
+      }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.productsPagination{
+    margin:20px 30px 50px 0;
+    display: flex;
+    justify-content:end;
+    align-items: center; 
+  }
+
+  .productsPagination>li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: .8rem;
+    border: 1px solid rgb(52, 199, 89);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  li.selected > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: 1px solid rgb(52, 199, 89);
+    background-color: rgb(52, 199, 89);
+    padding: 7px;
+    border-radius: 5px
+  }
+  .productsPagination>li.break,
+  li.next,
+  li.previous{
+    background-color: transparent;
+  }
+

@@ -1,0 +1,93 @@
+.modalArea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+     .saveBtn {
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        margin: 40px auto 0;
+        padding: 15px 0;
+        border: none;
+        border-radius: 12px;
+        color: white;
+        background-color: rgba(66, 180, 47, 1);
+      }
+  .modalWrapper {
+    position: relative;
+    z-index: 9999999;
+    width: 50%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    position: relative;
+    padding: 30px 20px;
+    .closeModalIcon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .title {
+      font-size: 32px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 1);
+      margin-bottom: 10px;
+    }
+       .modalCategoryBtn{
+      display: flex;
+      align-items: center;
+      background-color: rgba(245, 246, 247, 1);
+      color: rgba(66, 180, 47, 1);
+        margin-bottom: 20px;
+         border-radius: 12px;
+      .info,
+      .passwordChange{
+         width: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 50px;
+         cursor: pointer;
+      }
+      .activeBtn{
+        background-color: rgba(66, 180, 47, 1);
+        color: rgba(255, 255, 255, 1);
+        border-radius: 12px;
+      }
+    }
+    .formWrapper {
+      .inputListWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        gap: 14px;
+      }
+   
+    }
+    .passwordArea{
+         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        gap: 14px;
+    }
+  }
+}
+.closeModal {
+  display: none;
+}

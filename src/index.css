@@ -1,0 +1,281 @@
+body,
+html{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+   font-family: "Inter", sans-serif;
+   background-color: rgba(250, 250, 252, 1);
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+ /* number (telefon) inputun css */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.pageTitle{
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(48, 48, 48, 1);
+}
+.saveBtn {
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin: 40px auto 0;
+  padding: 15px 0;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  background-color: rgba(66, 180, 47, 1);
+}
+.langArea{
+width: fit-content;
+margin: 10px 0;
+display: flex;
+align-items: center;
+border-radius: 4px;
+cursor: pointer;
+color: rgba(0, 0, 0, 1);
+background-color: rgba(245, 245, 245, 1);
+}
+.langArea>.lang{
+    padding: 5px 7px;
+}
+.langArea > .activeLang {
+  border-radius: 5px;
+color: white;
+background-color: rgba(52, 199, 89, 1);
+}
+.inputName {
+display: block;
+font-size: 14px;
+font-weight: 400;
+margin: 10px 0;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 15px 5px 15px 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgba(198, 198, 200, 1);
+    border-radius: 12px;
+    color: rgba(68, 68, 68, 1);
+}
+
+.description{
+        width: 100%;
+        resize: none;
+        outline: none;
+        padding: 15px 5px 15px 10px;
+        border-radius: 12px;
+        border: 1px solid rgba(198, 198, 200, 1);
+}
+/* Bəzi səhifələrdə yuxarida olan search filter və add butonunun style - ri */
+.pageHeaderSearchFilterAdd {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 52px;
+  padding: 50px 30px;  
+  margin: 0 auto;
+  background-color: white;
+}
+.pageHeaderSearchInputWrapper {
+  width: 100%;
+  border: 1px solid rgba(198, 198, 200, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding-left: 5px;}
+.pageHeaderSearchInput {
+    font-size: 20px;
+    width: 95%;
+    height: 48px;
+    outline: none;
+    border: none;
+  }
+.pageHeaderFilterArea {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.pageHeaderFilterBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  white-space: nowrap;
+  background-color: transparent;
+  color: rgba(66, 180, 47, 1);
+  border: 1px solid rgba(66, 180, 47, 1);
+  border-radius: 6px;
+  height: 52px;
+  padding: 0 60px;
+  cursor: pointer;
+}
+.pageHeaderFilterContent {
+display: flex;
+flex-direction: column;
+width: 100%;
+gap: 2px;
+padding: 5px 0;
+position: absolute;
+top: 55px;
+left: 0;
+z-index: 9999;
+background-color: rgba(0, 0, 0, 0.5);
+color: rgba(255, 255, 255, 1);
+border-radius: 6px;
+}
+.pageHeaderFilterType {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+    padding: 5px 10px;
+}
+.activeBtn{
+background-color: rgba(66, 180, 47, 1);
+}
+.pageHeaderAddBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  height: 54px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgba(66, 180, 47, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+
+/*And design table global style  */
+.ant-table-thead{
+    position: sticky;
+    top: 70px;
+    background-color: rgba(66, 180, 47, 1);
+    z-index: 99;
+
+}
+
+.ant-table-container table {
+  border-collapse: separate !important;
+  border-spacing: 0 20px !important;
+  width: 95% !important;
+  margin: 0 auto;
+  border-radius: none !important;
+}
+.ant-table-tbody>tr>td,
+.ant-table-thead>tr>th{
+  padding: 10px 5px 10px 0 !important;
+}
+  .ant-table-wrapper {
+    min-width: 1000px; 
+  }
+.ant-table {
+  table-layout: auto !important; 
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  white-space: nowrap; 
+}
+
+
+.ant-table-wrapper .ant-table {
+     border-radius: 0 !important;
+}
+.ant-table-thead tr th{
+    background-color: transparent !important;
+    font-weight: 600 !important;
+    font-size: 16px;
+    padding-top: 0 !important;
+}
+.ant-table-thead tr th::before{
+    display: none !important;
+}
+.ant-table-tbody > tr {
+  background-color: rgba(251, 252, 255, 1) !important;
+}
+.ant-table-tbody >tr >td {
+    border: none !important;
+}
+.ant-table-tbody > tr > td:first-child {
+  color: rgba(144, 144, 144, 1) !important;
+  padding-left: 7px !important;
+}
+.ant-table-tbody > tr > td{
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+ .yes-icon,
+    .no-icon{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 20px;
+    }
+    .icon-list{
+      display: flex;
+      /* justify-content: end; */
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .ant-switch{
+      width: 40px;
+    }
+    .ant-switch-checked{
+      background: rgba(52, 199, 89, 1) !important;
+    }
+
+.activeStatus{
+    background-color: rgba(52, 199, 89, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.noActiveStatus{
+    background-color: rgba(255, 59, 48, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+/* and design paginationu islemirem */
+    .ant-table-pagination.ant-pagination{
+      display: none !important;
+    }
+
+
+    .options-table.ant-table-wrapper{
+     min-width:750px !important;
+    }

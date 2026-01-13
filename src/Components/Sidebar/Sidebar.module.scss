@@ -1,0 +1,53 @@
+.sidebarWrapper {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 250px;
+  height: fit-content;
+  color: rgba(23, 23, 23, 1);
+  padding: 20px 10px 10px 20px;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 10px 0;
+    color: rgba(106, 106, 106, 1);
+  }
+  .active {
+    color: rgba(66, 180, 47, 1);
+  }
+  .mainPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin: 10px 0;
+    color: rgba(23, 23, 23, 1);
+    cursor: pointer;
+    transition: 0.5s ease;
+    .iconName{
+        display: flex;
+        align-items: center;
+         gap: 7px;
+    }
+  }
+  .downUpIcon {
+    display: inline-block;
+    transition: 0.5s ease;
+  }
+  .rotateIcon {
+    transform: rotate(180deg);
+  }
+  .pageList {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  .activePageList {
+    max-height: 500px;
+    background-color: white;
+    margin-left: -20px;
+    padding-left: 20px;
+    width: 230px;
+  }
+}

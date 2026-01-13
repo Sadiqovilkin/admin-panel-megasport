@@ -1,0 +1,46 @@
+// .productsPageWrapper {
+//   .modal {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 9999999999;
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .modalContent {
+//       .closeIcon {
+//         position: absolute;
+//         top: 15px;
+//         right: 20px;
+//         cursor: pointer;
+//       }
+//       width: 700px;
+//       height: 50vh;
+//       background-color: white;
+//       border-radius: 12px;
+//       padding: 15px;
+//       position: relative;
+//       z-index: 999999;
+//       overflow-y: auto;
+//       .modalPageList{
+//         display: flex;
+//         align-items: center;
+//         gap: 20px;
+//         border-radius: 6px;
+//         padding: 10px;
+//         background-color: rgba(250, 250, 252, 1);
+//       .modalPageName{
+//         cursor: pointer;
+//         padding: 7px 12px;
+//       }
+//       .activePage{
+//         background-color: rgba(52, 199, 89, 1);
+//         color: white;
+//         border-radius: 4px;
+//       }
+//       }
+//     }
+//   }
+// }
